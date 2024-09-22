@@ -1,18 +1,18 @@
-import { useState } from 'react'
-import './App.css'
-import Header from './Header'
-import Footer from './Footer'
+import { useState } from "react";
+import "./App.css";
+import Header from "./Header";
+import SearchBeratungstelle from "./SearchBeratungstelle";
+import Footer from "./Footer";
 
 function App() {
-  
-
   return (
     <>
-    <Header/>
-    <Footer/>
-      
+      <Header />
+      <h1>Beratungsstelle Finder</h1>
+      <SearchBeratungstelle />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
