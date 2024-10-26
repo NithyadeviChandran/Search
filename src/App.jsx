@@ -1,14 +1,24 @@
 import "./App.css";
+import { Route, Routes } from "react-router-dom";
 import Header from "./Header";
-import SearchBeratungstelle from "./SearchBeratungstelle";
+import Pflegepfad from "./Plegepfad";
+import Slidepage from "./Slidepage";
+import Pflegegrad from "./Pflegegrad";
 import Footer from "./Footer";
+// import Pathway from 'Pathway'
+
 
 function App() {
   return (
     <>
       <Header />
-      <h1>Beratungsstelle Finder</h1>
-      <SearchBeratungstelle />
+
+      <Routes>
+      {/* <Route path="/" element={<Pathway />} /> */}
+      <Route path="/" element={<Pflegepfad />} />
+        <Route path="/Pflegegrad" element={<Pflegegrad />} />
+        <Route path="/slidepage" element={<Slidepage />} />
+      </Routes>
       <Footer />
     </>
   );
